@@ -1,0 +1,109 @@
+/* ALIGNIQUE GLOBAL BLACK THEME */
+/* Force black background across entire store */
+
+/* Global black background */
+body,
+html,
+#MainContent,
+.main-content,
+[id*="shopify-section"] {
+  background-color: #000000 !important;
+  background: #000000 !important;
+  color: #FFFFFF !important;
+}
+
+/* All text white by default */
+body, h1, h2, h3, h4, h5, h6, p, span, div, a, li, label {
+  color: #FFFFFF !important;
+}
+
+/* Product cards - black with gold accents */
+.card,
+.product-card,
+[class*="card"] {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  border: 1px solid rgba(255, 215, 0, 0.3) !important;
+}
+
+.card:hover,
+.product-card:hover {
+  border-color: #FFD700 !important;
+  box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3) !important;
+}
+
+/* Product titles white */
+.card__heading,
+.product-card__title,
+[class*="title"] {
+  color: #FFFFFF !important;
+}
+
+/* Product prices gold */
+.price,
+[class*="price"] {
+  color: #FFD700 !important;
+}
+
+/* Links white with gold hover */
+a {
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #FFD700 !important;
+}
+
+/* Buttons gold */
+.button,
+button,
+[type="submit"],
+[class*="button"] {
+  background-color: #FFD700 !important;
+  color: #000000 !important;
+  border: none !important;
+}
+
+.button:hover,
+button:hover {
+  background-color: #FFC700 !important;
+}
+
+/* Form inputs dark */
+input,
+textarea,
+select {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 215, 0, 0.5) !important;
+  color: #FFFFFF !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Collection/Product grid backgrounds */
+.collection,
+.product-grid,
+[class*="grid"] {
+  background-color: #000000 !important;
+}
+
+/* Footer black */
+.footer,
+footer {
+  background-color: #000000 !important;
+  border-top: 1px solid rgba(255, 215, 0, 0.2) !important;
+}
+
+/* Remove any white overlays */
+.overlay,
+[class*="overlay"] {
+  display: none !important;
+}
+
+/* Product images keep brightness */
+img {
+  filter: brightness(1.1) !important;
+}

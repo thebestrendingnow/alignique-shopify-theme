@@ -1,0 +1,23 @@
+# Shopify Theme - Files to ignore during deployment
+
+# Development files
+.git/
+.github/
+*.md
+!README.md
+.gitignore
+.shopifyignore
+
+# Python scripts
+*.py
+*.pyc
+__pycache__/
+
+# Shell scripts
+deploy-to-shopify.sh
+
+# Translation files
+translation.yml
+
+# Documentation
+release-notes.md

@@ -1,0 +1,514 @@
+/* ═══════════════════════════════════════════════════════════════
+   ALIGNIQUE PREMIUM BLACK THEME - CUSTOM STYLING
+   Brand Colors: Black #000000, Gold #FFD700, Purple #8B00FF, White #FFFFFF
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ═══════════════════════════════════════════════════════════════
+   HEADER & NAVIGATION - BLACK WITH WHITE TEXT
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Force black header background */
+.header-wrapper,
+.header,
+.shopify-section-header {
+  background-color: #000000 !important;
+  border-bottom: 2px solid #FFD700 !important;
+}
+
+/* White navigation links */
+.header__menu-item,
+.header__active-menu-item,
+.list-menu__item a,
+.header__menu-item span,
+.header__inline-menu a {
+  color: #FFFFFF !important;
+  font-weight: 500 !important;
+}
+
+/* Gold hover effect */
+.header__menu-item:hover,
+.list-menu__item a:hover,
+.header__inline-menu a:hover {
+  color: #FFD700 !important;
+  transition: color 0.3s ease;
+}
+
+/* Active menu item - Gold */
+.header__active-menu-item {
+  color: #FFD700 !important;
+  border-bottom: 2px solid #FFD700 !important;
+}
+
+/* Logo styling */
+.header__heading-logo {
+  max-width: 180px !important;
+  height: auto !important;
+}
+
+.header__heading-logo img {
+  max-height: 80px !important;
+  width: auto !important;
+  filter: brightness(1.1);
+}
+
+/* Hide store name if logo is present */
+.header__heading-logo + .h2 {
+  display: none;
+}
+
+/* White icons in header */
+.header__icon,
+.header__icon svg {
+  color: #FFFFFF !important;
+  fill: #FFFFFF !important;
+}
+
+.header__icon:hover {
+  color: #FFD700 !important;
+}
+
+.header__icon:hover svg {
+  fill: #FFD700 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   MOBILE MENU - BLACK WITH WHITE TEXT
+   ═══════════════════════════════════════════════════════════════ */
+
+.menu-drawer,
+.menu-drawer__inner-container {
+  background-color: #000000 !important;
+}
+
+.menu-drawer__menu-item,
+.menu-drawer__menu a {
+  color: #FFFFFF !important;
+}
+
+.menu-drawer__menu-item:hover,
+.menu-drawer__menu a:hover {
+  color: #FFD700 !important;
+}
+
+.menu-drawer__close-button svg {
+  fill: #FFFFFF !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SEARCH BAR - DARK THEME
+   ═══════════════════════════════════════════════════════════════ */
+
+.search-modal__content {
+  background-color: #1a1a1a !important;
+}
+
+.search-modal__form input {
+  background-color: #2a2a2a !important;
+  color: #FFFFFF !important;
+  border: 1px solid #FFD700 !important;
+}
+
+.search__button svg {
+  fill: #FFD700 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BUTTONS - GOLD PRIMARY, WHITE OUTLINE SECONDARY
+   ═══════════════════════════════════════════════════════════════ */
+
+.button--primary,
+.shopify-payment-button__button--unbranded {
+  background-color: #FFD700 !important;
+  color: #000000 !important;
+  border: 2px solid #FFD700 !important;
+  font-weight: 600 !important;
+}
+
+.button--primary:hover {
+  background-color: #000000 !important;
+  color: #FFD700 !important;
+  border: 2px solid #FFD700 !important;
+}
+
+.button--secondary {
+  background-color: transparent !important;
+  color: #FFFFFF !important;
+  border: 2px solid #FFFFFF !important;
+}
+
+.button--secondary:hover {
+  background-color: #FFFFFF !important;
+  color: #000000 !important;
+}
+
+/* Add to Cart button - Gold */
+.product-form__submit {
+  background-color: #FFD700 !important;
+  color: #000000 !important;
+  border: 2px solid #FFD700 !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+}
+
+.product-form__submit:hover {
+  background-color: #000000 !important;
+  color: #FFD700 !important;
+  border: 2px solid #FFD700 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   PRODUCT CARDS - DARK THEME WITH GOLD ACCENTS
+   ═══════════════════════════════════════════════════════════════ */
+
+.card {
+  background-color: #1a1a1a !important;
+  border: 1px solid #2a2a2a !important;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: #FFD700 !important;
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2);
+  transform: translateY(-4px);
+}
+
+.card__heading,
+.card__information .card__heading {
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+}
+
+.price {
+  color: #FFD700 !important;
+  font-weight: 700 !important;
+}
+
+.price--on-sale {
+  color: #8B00FF !important;
+}
+
+.price__sale .price-item--regular {
+  color: #999999 !important;
+  text-decoration: line-through;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   COLLECTION GRID - DARK BACKGROUND
+   ═══════════════════════════════════════════════════════════════ */
+
+.collection {
+  background-color: #0a0a0a !important;
+}
+
+.collection-hero__title {
+  color: #FFD700 !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.facets {
+  background-color: #1a1a1a !important;
+  border: 1px solid #2a2a2a !important;
+}
+
+.facets__heading {
+  color: #FFD700 !important;
+}
+
+.facet-checkbox input[type="checkbox"]:checked + label {
+  color: #FFD700 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   FOOTER - BLACK WITH GOLD ACCENTS
+   ═══════════════════════════════════════════════════════════════ */
+
+.footer {
+  background-color: #000000 !important;
+  border-top: 2px solid #FFD700 !important;
+  color: #FFFFFF !important;
+}
+
+.footer__heading {
+  color: #FFD700 !important;
+  font-weight: 600 !important;
+}
+
+.footer__list-social a,
+.footer a {
+  color: #FFFFFF !important;
+}
+
+.footer a:hover {
+  color: #FFD700 !important;
+}
+
+.footer__copyright,
+.footer__content-bottom {
+  color: #999999 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CART - DARK THEME
+   ═══════════════════════════════════════════════════════════════ */
+
+.cart-drawer,
+.cart-drawer__inner {
+  background-color: #1a1a1a !important;
+}
+
+.cart-drawer__heading {
+  color: #FFD700 !important;
+}
+
+.cart-item__details,
+.cart-item__name {
+  color: #FFFFFF !important;
+}
+
+.cart-item__price-wrapper {
+  color: #FFD700 !important;
+}
+
+.cart__checkout-button {
+  background-color: #FFD700 !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+.cart__checkout-button:hover {
+  background-color: #000000 !important;
+  color: #FFD700 !important;
+  border: 2px solid #FFD700 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ANNOUNCEMENT BAR - HIDDEN (REMOVED YELLOW BACKGROUND)
+   ═══════════════════════════════════════════════════════════════ */
+
+/* HIDE ANNOUNCEMENT BAR TO REMOVE YELLOW */
+.announcement-bar {
+  display: none !important;
+}
+
+/* If you want to show it later, use BLACK background instead:
+.announcement-bar {
+  background-color: #000000 !important;
+  color: #FFD700 !important;
+  font-weight: 600 !important;
+  border-bottom: 2px solid #FFD700 !important;
+}
+
+.announcement-bar__link {
+  color: #FFD700 !important;
+}
+
+.announcement-bar__link:hover {
+  color: #FFFFFF !important;
+}
+*/
+
+/* ═══════════════════════════════════════════════════════════════
+   PRODUCT PAGE - PREMIUM LOOK
+   ═══════════════════════════════════════════════════════════════ */
+
+.product {
+  background-color: #0a0a0a !important;
+}
+
+.product__title {
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+  font-size: 32px !important;
+}
+
+.product__description {
+  color: #CCCCCC !important;
+  line-height: 1.8 !important;
+}
+
+.product-form__input label {
+  color: #FFD700 !important;
+  font-weight: 600 !important;
+}
+
+.product__info-container {
+  background-color: #1a1a1a !important;
+  padding: 30px !important;
+  border-radius: 8px !important;
+  border: 1px solid #2a2a2a !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BADGES & LABELS - PURPLE & GOLD
+   ═══════════════════════════════════════════════════════════════ */
+
+.badge {
+  background-color: #8B00FF !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+}
+
+.badge--sale,
+.badge--sold-out {
+  background-color: #FFD700 !important;
+  color: #000000 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TYPOGRAPHY - ELEGANT & READABLE
+   ═══════════════════════════════════════════════════════════════ */
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+}
+
+body {
+  background-color: #0a0a0a !important;
+  color: #CCCCCC !important;
+}
+
+p {
+  color: #CCCCCC !important;
+  line-height: 1.7 !important;
+}
+
+a {
+  color: #FFD700 !important;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #FFFFFF !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ANIMATIONS & EFFECTS
+   ═══════════════════════════════════════════════════════════════ */
+
+@keyframes goldGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  }
+}
+
+.button--primary:hover,
+.product-form__submit:hover {
+  animation: goldGlow 2s infinite;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE - MOBILE OPTIMIZATION
+   ═══════════════════════════════════════════════════════════════ */
+
+@media screen and (max-width: 749px) {
+  .header__heading-logo img {
+    max-height: 60px !important;
+  }
+  
+  .product__title {
+    font-size: 24px !important;
+  }
+  
+  .header__menu-item {
+    padding: 12px 16px !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ACCESSIBILITY & FOCUS STATES
+   ═══════════════════════════════════════════════════════════════ */
+
+*:focus-visible {
+  outline: 2px solid #FFD700 !important;
+  outline-offset: 2px !important;
+}
+
+.skip-to-content-link:focus {
+  background-color: #FFD700 !important;
+  color: #000000 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   LOADING & SKELETON STATES
+   ═══════════════════════════════════════════════════════════════ */
+
+.loading-overlay__spinner {
+  border-color: #FFD700 transparent transparent transparent !important;
+}
+
+/* END ALIGNIQUE CUSTOM STYLING */
+
+/* ═══════════════════════════════════════════════════════════════
+   ENHANCED VISIBILITY & BRIGHTNESS
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Brighten main content area */
+.shopify-section:not(.shopify-section-header) {
+  background-color: #FFFFFF !important;
+}
+
+/* Ensure product cards are bright */
+.product-card-wrapper,
+.card-wrapper {
+  background-color: #FFFFFF !important;
+}
+
+/* Product images - increase brightness */
+.card__media img,
+.product__media img {
+  filter: brightness(1.1) contrast(1.05) !important;
+}
+
+/* Make sure text is readable */
+.card__information,
+.card-information {
+  background-color: #FFFFFF !important;
+  color: #000000 !important;
+}
+
+/* Collection/Page title visibility */
+.collection-hero__title,
+.page-title {
+  color: #000000 !important;
+  text-shadow: none !important;
+}
+
+/* Logo - make it pop */
+.header__heading-logo img,
+.logo img {
+  filter: brightness(1.2) !important;
+  background-color: transparent !important;
+}
+
+/* Navigation buttons - high contrast */
+.header__menu-item,
+.list-menu__item {
+  background-color: transparent !important;
+}
+
+/* Force white background for main sections */
+main#MainContent {
+  background-color: #FFFFFF !important;
+}
+
+.page-width {
+  background-color: #FFFFFF !important;
+}
+
+/* Remove dark overlays */
+.gradient,
+.banner__box {
+  background: none !important;
+}
+/* Updated: Wed Dec  3 03:14:37 UTC 2025 */
+/* Deployment trigger Wed Dec  3 03:16:21 UTC 2025 */

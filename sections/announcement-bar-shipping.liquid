@@ -1,0 +1,79 @@
+{% comment %}
+  Alignique Free Shipping Announcement Bar
+  Simple gold banner with shipping thresholds
+  Matches Alignique brand colors
+{% endcomment %}
+
+<style>
+.alignique-shipping-banner {
+  background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%);
+  color: #000000;
+  text-align: center;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  border-bottom: 2px solid #000000;
+  position: relative;
+  z-index: 100;
+}
+
+.alignique-shipping-banner strong {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.alignique-shipping-banner .shipping-emoji {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.alignique-shipping-banner .divider {
+  margin: 0 15px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .alignique-shipping-banner {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+  
+  .alignique-shipping-banner .divider {
+    display: block;
+    margin: 5px 0;
+  }
+}
+</style>
+
+<div class="alignique-shipping-banner">
+  <span class="shipping-emoji">🚚</span>
+  <strong>Free Shipping:</strong>
+  NL over €50
+  <span class="divider">•</span>
+  EU over €75
+  <span class="divider">•</span>
+  Worldwide over €100
+  <span class="shipping-emoji">✨</span>
+</div>
+
+{% schema %}
+{
+  "name": "Free Shipping Banner",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Free Shipping Thresholds"
+    },
+    {
+      "type": "paragraph",
+      "content": "This banner displays your free shipping policy. Edit thresholds in the code if needed."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Free Shipping Banner"
+    }
+  ]
+}
+{% endschema %}

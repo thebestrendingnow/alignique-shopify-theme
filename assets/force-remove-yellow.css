@@ -1,0 +1,46 @@
+/* EMERGENCY FIX: Remove ALL yellow/gold backgrounds from entire page */
+
+/* Force remove any yellow overlay */
+body > *:not(.shopify-section) {
+  background-color: transparent !important;
+}
+
+/* Remove yellow from body */
+body {
+  background-color: #0a0a0a !important;
+}
+
+/* Remove yellow from any announcement bars */
+.announcement-bar,
+.announcement-bar-section,
+[class*="announcement"],
+[class*="banner"] {
+  display: none !important;
+}
+
+/* Force header to be black */
+.header-wrapper,
+.header,
+.shopify-section-header {
+  background-color: #000000 !important;
+}
+
+/* Remove any full-page overlays */
+body > div[style*="position: fixed"],
+body > div[style*="position: absolute"] {
+  display: none !important;
+}
+
+/* If there's a sticky element covering page */
+*[style*="position: sticky"][style*="background"] {
+  display: none !important;
+}
+
+/* Force main content area to be visible */
+main,
+#MainContent,
+.main-content {
+  background-color: transparent !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
