@@ -383,11 +383,7 @@
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    <!-- Voice Shopping Assistant -->
-    {% render 'voice-assistant' %}
-    <!-- End Voice Shopping Assistant -->
-
-    <!-- AI Gift Finder Chatbot -->
+    <!-- AI Gift Finder Chatbot (Unified - includes voice + chat) -->
     {{ 'ai-chatbot.css' | asset_url | stylesheet_tag }}
     <script src="{{ 'ai-chatbot.js' | asset_url }}" defer></script>
     <!-- End AI Gift Finder Chatbot -->
