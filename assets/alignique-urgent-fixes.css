@@ -1,0 +1,348 @@
+/**
+ * URGENT FIXES - Apply Black & Gold Theme Everywhere
+ * Force override all white backgrounds
+ */
+
+/* ============================================
+   FORCE BLACK BACKGROUNDS EVERYWHERE
+   ============================================ */
+
+body,
+html,
+#MainContent,
+.shopify-section,
+.section,
+main,
+.page-width {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+/* All sections black */
+section,
+.section-template--,
+[class*="section-"] {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+/* Product grid background */
+.collection,
+.collection-grid,
+.product-grid {
+  background: #000 !important;
+}
+
+/* Individual product cards - black with gold border */
+.card,
+.card-wrapper,
+.product-card,
+.grid__item {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(26, 0, 51, 0.95) 100%) !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  border-radius: 15px !important;
+}
+
+/* Product titles and text white */
+.card__heading,
+.card-information,
+.card__information,
+.product-card__title,
+h1, h2, h3, h4, h5, h6,
+p, span, a {
+  color: #fff !important;
+}
+
+/* Links gold on hover */
+a:hover {
+  color: #D4AF37 !important;
+}
+
+/* ============================================
+   HEADER FIXES
+   ============================================ */
+
+.header-wrapper,
+.header,
+header {
+  background: #000 !important;
+  border-bottom: 2px solid #D4AF37 !important;
+}
+
+.header__menu-item,
+.header__inline-menu a,
+.menu-drawer__menu-item {
+  color: #fff !important;
+}
+
+.header__menu-item:hover,
+.header__inline-menu a:hover {
+  color: #D4AF37 !important;
+}
+
+/* ============================================
+   FOOTER FIXES
+   ============================================ */
+
+.footer,
+.footer-block,
+#shopify-section-footer {
+  background: #000 !important;
+  border-top: 2px solid #D4AF37 !important;
+  color: #fff !important;
+}
+
+.footer__content-top,
+.footer__content-bottom {
+  background: transparent !important;
+}
+
+.footer h2,
+.footer h3,
+.footer a,
+.footer p {
+  color: #fff !important;
+}
+
+.footer a:hover {
+  color: #D4AF37 !important;
+}
+
+/* ============================================
+   PRODUCT PAGE FIXES
+   ============================================ */
+
+.product,
+.product-info-container,
+.product__info-wrapper {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+.product__title,
+.product-form__input,
+.price {
+  color: #fff !important;
+}
+
+.price__sale {
+  color: #D4AF37 !important;
+}
+
+/* ============================================
+   CART & CHECKOUT
+   ============================================ */
+
+.cart,
+.cart-drawer,
+.cart-items {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+.cart-item,
+.cart-item__details {
+  color: #fff !important;
+}
+
+/* ============================================
+   FORMS
+   ============================================ */
+
+input,
+textarea,
+select,
+.field__input {
+  background: rgba(0, 0, 0, 0.8) !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  color: #fff !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* ============================================
+   BUTTONS - GOLD GRADIENT
+   ============================================ */
+
+.button,
+.btn,
+button[type="submit"],
+.shopify-payment-button__button,
+.product-form__submit {
+  background: linear-gradient(135deg, #D4AF37 0%, #F59E0B 100%) !important;
+  color: #000 !important;
+  border: none !important;
+  font-weight: 700 !important;
+  border-radius: 50px !important;
+  padding: 15px 40px !important;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3) !important;
+  transition: all 0.3s !important;
+}
+
+.button:hover,
+button[type="submit"]:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5) !important;
+}
+
+/* ============================================
+   IMAGE CONTAINERS
+   ============================================ */
+
+.card__media,
+.media,
+.product__media-wrapper {
+  background: #000 !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+}
+
+/* ============================================
+   COLLECTION BANNER
+   ============================================ */
+
+.collection-hero,
+.collection-banner {
+  background: linear-gradient(135deg, #000000 0%, #1a0033 100%) !important;
+  border-bottom: 2px solid #D4AF37 !important;
+}
+
+/* ============================================
+   BREADCRUMBS
+   ============================================ */
+
+.breadcrumb,
+.breadcrumbs {
+  color: #9CA3AF !important;
+}
+
+.breadcrumb a {
+  color: #D4AF37 !important;
+}
+
+/* ============================================
+   MODALS & POPUPS
+   ============================================ */
+
+.modal,
+.popup,
+.drawer {
+  background: #000 !important;
+  border: 1px solid #D4AF37 !important;
+  color: #fff !important;
+}
+
+/* ============================================
+   SEARCH
+   ============================================ */
+
+.search-modal,
+.predictive-search,
+.search__input {
+  background: #000 !important;
+  color: #fff !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+}
+
+/* ============================================
+   BADGES & TAGS
+   ============================================ */
+
+.badge,
+.tag {
+  background: linear-gradient(135deg, #D4AF37 0%, #F59E0B 100%) !important;
+  color: #000 !important;
+  border-radius: 20px !important;
+  padding: 5px 15px !important;
+  font-weight: 700 !important;
+}
+
+/* ============================================
+   PRICE STYLING
+   ============================================ */
+
+.price__regular,
+.price__sale {
+  color: #D4AF37 !important;
+  font-weight: 700 !important;
+}
+
+.price__compare {
+  color: #9CA3AF !important;
+  text-decoration: line-through !important;
+}
+
+/* ============================================
+   MOBILE MENU
+   ============================================ */
+
+.menu-drawer,
+.mobile-nav {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+.menu-drawer__navigation-item {
+  color: #fff !important;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2) !important;
+}
+
+.menu-drawer__navigation-item:hover {
+  background: rgba(212, 175, 55, 0.1) !important;
+  color: #D4AF37 !important;
+}
+
+/* ============================================
+   FILTERS & FACETS
+   ============================================ */
+
+.facets,
+.facet-filters,
+.facets__form {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  color: #fff !important;
+}
+
+.facets__heading {
+  color: #D4AF37 !important;
+}
+
+/* ============================================
+   IMPORTANT OVERRIDES
+   ============================================ */
+
+/* Override any remaining white backgrounds */
+[style*="background: white"],
+[style*="background: #fff"],
+[style*="background-color: white"],
+[style*="background-color: #fff"] {
+  background: #000 !important;
+}
+
+/* Override any black text that should be white */
+[style*="color: black"],
+[style*="color: #000"] {
+  color: #fff !important;
+}
+
+/* ============================================
+   ANNOUNCEMENT BAR ENHANCEMENT
+   ============================================ */
+
+.announcement-bar {
+  background: linear-gradient(90deg, #D4AF37 0%, #F59E0B 50%, #D4AF37 100%) !important;
+  background-size: 200% 100% !important;
+  animation: gradient-shift 3s infinite !important;
+  color: #000 !important;
+  font-weight: 700 !important;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
