@@ -383,9 +383,10 @@
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    <!-- AI Gift Finder Chatbot (Unified - includes voice + chat) -->
-    {{ 'ai-chatbot.css' | asset_url | stylesheet_tag }}
-    <script src="{{ 'ai-chatbot.js' | asset_url }}" defer></script>
-    <!-- End AI Gift Finder Chatbot -->
+    <!-- AI Gift Finder Chatbot Enhanced + Website Tour -->
+    {{ 'alignique-enhanced.css' | asset_url | stylesheet_tag }}
+    <script src="{{ 'ai-chatbot-enhanced.js' | asset_url }}" defer></script>
+    <script src="{{ 'alignique-tour.js' | asset_url }}" defer></script>
+    <!-- End AI Chatbot + Tour -->
   </body>
 </html>
