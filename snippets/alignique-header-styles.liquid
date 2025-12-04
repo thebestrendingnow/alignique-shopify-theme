@@ -1,0 +1,160 @@
+{% comment %}
+  Alignique Custom Header Styles
+  Black & gold premium theme
+{% endcomment %}
+
+<style>
+/* Alignique Header Override */
+.header-wrapper {
+  background: #000 !important;
+  border-bottom: 2px solid #D4AF37 !important;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2) !important;
+}
+
+.header {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+/* Logo styling */
+.header__heading-logo img {
+  filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5));
+  max-height: 60px;
+}
+
+/* Navigation links */
+.header__menu-item,
+.list-menu__item {
+  color: #fff !important;
+}
+
+.header__menu-item:hover,
+.list-menu__item:hover {
+  color: #D4AF37 !important;
+}
+
+.header__active-menu-item {
+  color: #D4AF37 !important;
+  border-bottom: 2px solid #D4AF37;
+}
+
+/* Top announcement bar */
+.announcement-bar {
+  background: linear-gradient(90deg, #D4AF37 0%, #F59E0B 50%, #D4AF37 100%) !important;
+  color: #000 !important;
+  font-weight: 600;
+  padding: 12px 0;
+}
+
+.announcement-bar__message {
+  color: #000 !important;
+}
+
+/* Contact info in header */
+.alignique-header-contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.9rem;
+  color: #9CA3AF;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.alignique-header-contact a {
+  color: #D4AF37;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.alignique-header-contact a:hover {
+  color: #F59E0B;
+}
+
+/* Cart icon */
+.header__icon--cart {
+  color: #D4AF37 !important;
+}
+
+.cart-count-bubble {
+  background: #D4AF37 !important;
+  color: #000 !important;
+}
+
+/* Search */
+.header__search {
+  background: rgba(212, 175, 55, 0.1) !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+}
+
+.search__input {
+  background: transparent !important;
+  color: #fff !important;
+}
+
+.search__input::placeholder {
+  color: #6B7280 !important;
+}
+
+/* Mobile menu */
+.header__icon--menu {
+  color: #D4AF37 !important;
+}
+
+.menu-drawer {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+.menu-drawer__inner-container {
+  background: #000 !important;
+}
+
+.menu-drawer__navigation-item {
+  color: #fff !important;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.menu-drawer__navigation-item:hover {
+  color: #D4AF37 !important;
+  background: rgba(212, 175, 55, 0.1) !important;
+}
+
+/* Mega menu */
+.mega-menu {
+  background: #000 !important;
+  border: 1px solid #D4AF37 !important;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3) !important;
+}
+
+.mega-menu__link {
+  color: #9CA3AF !important;
+}
+
+.mega-menu__link:hover {
+  color: #D4AF37 !important;
+}
+
+/* Responsive */
+@media (max-width: 989px) {
+  .alignique-header-contact {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 749px) {
+  .alignique-header-contact {
+    display: none;
+  }
+}
+</style>
+
+<!-- Contact Bar -->
+<div class="alignique-header-contact page-width">
+  <span>📧 <a href="mailto:support@alignique.shop">support@alignique.shop</a></span>
+  <span>📞 <a href="tel:+1234567890">+1 (234) 567-890</a></span>
+  <span>🚚 Free shipping on orders over $75</span>
+  <span style="margin-left: auto;">✨ Use code <strong style="color: #D4AF37;">GIFT10</strong> for 10% off</span>
+</div>

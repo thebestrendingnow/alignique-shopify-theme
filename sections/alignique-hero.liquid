@@ -1,0 +1,334 @@
+{% comment %}
+  Alignique Hero Section
+  Premium black & gold theme with AI Gift Finder
+{% endcomment %}
+
+<style>
+/* Alignique Premium Black & Gold Hero */
+.alignique-hero {
+  background: linear-gradient(135deg, #000000 0%, #1a0033 50%, #000000 100%);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 3px solid #D4AF37;
+}
+
+.alignique-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.alignique-hero-stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.alignique-star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #D4AF37;
+  border-radius: 50%;
+  animation: twinkle 3s infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+.alignique-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.alignique-logo {
+  max-width: 300px;
+  margin: 0 auto 30px;
+  filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.5));
+}
+
+.alignique-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  background: linear-gradient(135deg, #D4AF37 0%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+}
+
+.alignique-tagline {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  color: #E5E7EB;
+  font-weight: 300;
+}
+
+.alignique-features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.alignique-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background: rgba(212, 175, 55, 0.1);
+  border-radius: 15px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.alignique-feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+  border-color: #D4AF37;
+}
+
+.alignique-feature-icon {
+  font-size: 2.5rem;
+}
+
+.alignique-feature-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #D4AF37;
+}
+
+.alignique-feature-desc {
+  font-size: 0.9rem;
+  color: #9CA3AF;
+  text-align: center;
+}
+
+.alignique-cta-section {
+  margin-top: 50px;
+}
+
+.alignique-cta-primary {
+  display: inline-block;
+  background: linear-gradient(135deg, #D4AF37 0%, #F59E0B 100%);
+  color: #000;
+  padding: 20px 60px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 10px;
+}
+
+.alignique-cta-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.6);
+}
+
+.alignique-cta-secondary {
+  display: inline-block;
+  background: transparent;
+  color: #D4AF37;
+  padding: 18px 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  border: 2px solid #D4AF37;
+  transition: all 0.3s;
+  margin: 10px;
+}
+
+.alignique-cta-secondary:hover {
+  background: rgba(212, 175, 55, 0.1);
+  border-color: #F59E0B;
+  color: #F59E0B;
+}
+
+.alignique-social-proof {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.alignique-proof-item {
+  text-align: center;
+}
+
+.alignique-proof-number {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #D4AF37 0%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.alignique-proof-label {
+  font-size: 1rem;
+  color: #9CA3AF;
+  margin-top: 5px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .alignique-hero {
+    padding: 60px 15px;
+  }
+  
+  .alignique-logo {
+    max-width: 200px;
+  }
+  
+  .alignique-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .alignique-tagline {
+    font-size: 1.1rem;
+  }
+  
+  .alignique-features {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .alignique-cta-primary,
+  .alignique-cta-secondary {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .alignique-social-proof {
+    gap: 30px;
+  }
+  
+  .alignique-proof-number {
+    font-size: 2rem;
+  }
+}
+</style>
+
+<section class="alignique-hero">
+  <!-- Animated stars -->
+  <div class="alignique-hero-stars">
+    <div class="alignique-star" style="top: 10%; left: 15%;"></div>
+    <div class="alignique-star" style="top: 20%; left: 85%;"></div>
+    <div class="alignique-star" style="top: 40%; left: 10%;"></div>
+    <div class="alignique-star" style="top: 60%; left: 90%;"></div>
+    <div class="alignique-star" style="top: 80%; left: 20%;"></div>
+    <div class="alignique-star" style="top: 15%; left: 60%;"></div>
+  </div>
+
+  <div class="alignique-hero-content">
+    <!-- Logo -->
+    <img src="{{ 'alignique-logo.png' | asset_url }}" alt="Alignique" class="alignique-logo">
+    
+    <!-- Main headline -->
+    <h1>Where Hearts Align Through Cosmic Gifts</h1>
+    
+    <!-- Tagline -->
+    <p class="alignique-tagline">
+      Personalized gifts guided by astrology, powered by AI
+    </p>
+    
+    <!-- Features -->
+    <div class="alignique-features">
+      <div class="alignique-feature">
+        <div class="alignique-feature-icon">✨</div>
+        <div class="alignique-feature-title">AI Gift Finder</div>
+        <div class="alignique-feature-desc">Personalized recommendations<br>powered by GPT-5.1</div>
+      </div>
+      
+      <div class="alignique-feature">
+        <div class="alignique-feature-icon">♈</div>
+        <div class="alignique-feature-title">Zodiac Curated</div>
+        <div class="alignique-feature-desc">Products matched to<br>astrological signs</div>
+      </div>
+      
+      <div class="alignique-feature">
+        <div class="alignique-feature-icon">🎁</div>
+        <div class="alignique-feature-title">Premium Quality</div>
+        <div class="alignique-feature-desc">Handpicked items for<br>meaningful gifting</div>
+      </div>
+      
+      <div class="alignique-feature">
+        <div class="alignique-feature-icon">🚚</div>
+        <div class="alignique-feature-title">Free Shipping</div>
+        <div class="alignique-feature-desc">On orders over $75<br>worldwide delivery</div>
+      </div>
+    </div>
+    
+    <!-- CTAs -->
+    <div class="alignique-cta-section">
+      <a href="#gift-finder" class="alignique-cta-primary">
+        🔮 Find Your Perfect Gift
+      </a>
+      <a href="/collections/all" class="alignique-cta-secondary">
+        Browse All Products
+      </a>
+    </div>
+    
+    <!-- Social proof -->
+    <div class="alignique-social-proof">
+      <div class="alignique-proof-item">
+        <div class="alignique-proof-number">10,000+</div>
+        <div class="alignique-proof-label">Happy Customers</div>
+      </div>
+      <div class="alignique-proof-item">
+        <div class="alignique-proof-number">4.8⭐</div>
+        <div class="alignique-proof-label">Average Rating</div>
+      </div>
+      <div class="alignique-proof-item">
+        <div class="alignique-proof-number">24/7</div>
+        <div class="alignique-proof-label">AI Support</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// Create random stars
+document.addEventListener('DOMContentLoaded', function() {
+  const starsContainer = document.querySelector('.alignique-hero-stars');
+  const numStars = 20;
+  
+  for (let i = 0; i < numStars; i++) {
+    const star = document.createElement('div');
+    star.className = 'alignique-star';
+    star.style.top = Math.random() * 100 + '%';
+    star.style.left = Math.random() * 100 + '%';
+    star.style.animationDelay = Math.random() * 3 + 's';
+    starsContainer.appendChild(star);
+  }
+});
+</script>

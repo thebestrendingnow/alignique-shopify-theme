@@ -257,6 +257,9 @@
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'alignique-custom.css' | asset_url | stylesheet_tag }}
+    
+    {%- comment -%} Alignique Custom Header Styles {%- endcomment -%}
+    {% render 'alignique-header-styles' %}
     {{ 'global-black-theme.css' | asset_url | stylesheet_tag }}
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -315,6 +318,9 @@
       {{ content_for_layout }}
     </main>
 
+    {%- comment -%} Alignique Custom Footer {%- endcomment -%}
+    {% render 'alignique-footer' %}
+    
     {% sections 'footer-group' %}
 
     <ul hidden>
